@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: only light;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+.section-padding {
+  @apply py-16 sm:py-20;
+}
+
+.section-heading {
+  @apply text-3xl md:text-4xl font-bold tracking-tight text-slate-900;
+}
+
+.section-subheading {
+  @apply text-base text-slate-500 mt-4 max-w-2xl;
+}
